@@ -127,3 +127,106 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+ /* Stili di default per le immagini su una riga */
+
+  
+  .image-container img {
+    flex: 1; /* Le immagini occupano uno spazio uguale all'interno del contenitore flessibile */
+    max-width: 100%; /* Assicura che le immagini non superino la larghezza del loro contenitore */
+    height: auto; /* Mantieni il rapporto di aspetto delle immagini */
+    margin: 5px; /* Aggiungi spaziatura tra le immagini */
+  }
+  
+ 
+  
+ @media screen and (max-width:768px) {
+
+    sidebar{
+        display: none;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .site-header {
+        width: 100%;
+    }
+
+    .text-center{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .card {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+
+    .card img{
+
+            flex: 1; 
+            max-width: 100%; 
+            height: auto; 
+            margin: 5px;
+          
+    }
+   
+    .lessons .row{
+        width: 100%;
+        flex-wrap: wrap;
+        width: calc(100% / 2);
+    }
+
+    .lessons.col{
+       width: 100%;
+    }
+
+    .steps{
+        width: 100%;
+    }
+
+    .steps .row {
+        width: calc(100% / 3);
+    }
+    
+    .steps .col{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .why-us.row{
+        width: calc(100% / 3);
+    }
+
+    .col-right{
+        width: 100%;
+    }
+ }
+
+
+
+
+    @media screen and (max-width: 480px) {
+        
+        .card {
+          flex-direction: row;
+        }
+
+        .card img{
+            flex: unset; 
+            max-width: unset; 
+            width: 100%; 
+            margin: 5px auto;
+        }
+      }
+      
+
+
