@@ -159,20 +159,20 @@ img {
         width: 100%;
     }
 
-    .container{
+    .lessons .text-center{
         width: 100%;
     }
-    .card {
+    .row {
         display: flex; 
         flex-wrap: wrap;
     }
 
-    .card img{
+    .row img{
 
-            flex: 1; 
-            max-width: 100%; 
-            height: auto; 
-            margin: 5px;
+        flex: 1; 
+        max-width: 100%; 
+        height: auto; 
+        margin: 5px;
           
     }
    
@@ -215,12 +215,17 @@ img {
 
 
     @media screen and (max-width: 480px) {
+
+        .steps .text-center{
+            width: 100%;
+            text-align: center;
+        }
         
-        .card {
-          flex-direction: row;
+        .row {
+          flex-direction: column;
         }
 
-        .card img{
+        .row img{
             flex: unset; 
             max-width: unset; 
             width: 100%; 
